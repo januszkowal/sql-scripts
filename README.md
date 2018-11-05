@@ -1,1 +1,2 @@
-list_of_number.sql - several versions of sql statements returning list of numbers
+# SQL Scripts
+- list_of_number.sql - several sql statements returning list of numbers
