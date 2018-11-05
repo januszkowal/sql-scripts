@@ -1,9 +1,11 @@
-#https://blog.jooq.org/2013/11/19/how-to-create-a-range-from-1-to-10-in-sql/
+--https://blog.jooq.org/2013/11/19/how-to-create-a-range-from-1-to-10-in-sql/
 
+## Example 1
 SELECT LEVEL AS V
 FROM DUAL CONNECT BY LEVEL<100
 /
 
+## Example 2
 SELECT V
 FROM (
   SELECT 1 V FROM DUAL
@@ -16,6 +18,7 @@ MODEL DIMENSION BY (ROWNUM R)
 ORDER BY 1
 /
 
+## Example 3
 SELECT ROWNUM 
 FROM ALL_OBJECTS, ALL_OBJECTS,
      ALL_OBJECTS, ALL_OBJECTS
