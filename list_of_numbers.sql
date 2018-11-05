@@ -1,3 +1,15 @@
-select level as num
-from dual connect by level<100000
+SELECT LEVEL AS V
+FROM DUAL CONNECT BY LEVEL<100000
+/
+
+SELECT V
+FROM (
+  SELECT 1 V FROM DUAL
+) T
+MODEL DIMENSION BY (ROWNUM R)
+      MEASURES (V)
+      RULES ITERATE (10) (
+        V[ITERATION_NUMBER] = CV(R) + 1
+      )
+ORDER BY 1
 /
