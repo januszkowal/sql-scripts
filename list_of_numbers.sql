@@ -1,4 +1,4 @@
-https://blog.jooq.org/2013/11/19/how-to-create-a-range-from-1-to-10-in-sql/
+#https://blog.jooq.org/2013/11/19/how-to-create-a-range-from-1-to-10-in-sql/
 
 SELECT LEVEL AS V
 FROM DUAL CONNECT BY LEVEL<100
