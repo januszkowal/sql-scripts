@@ -11,4 +11,5 @@ CONNECT username/password@[//]host[:port][/service_name]
 SQLPLUS username/password@[//]host[:port][/service_name]
 
 Examples:
+
 sqlplus scott/tiger@//serwer.net:1521/DB
