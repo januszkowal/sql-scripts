@@ -4,6 +4,7 @@ Useful
 * [list_of_numbers.sql](list_of_numbers.sql) - several sql statements returning list of numbers
 * [validate.sql](validate.sql) - compile objects in current schema
 * [exportcsv.sql](exportcsv.sql) - export data to csv file via SPOOL
+* [exportcsv1.sql](exportcsv1.sql) - export data to csv file via SPOOL (using markup csv feature)
 
 ### Connect to oracle without entry in tnsnames.ora - EZCONNECT
 
